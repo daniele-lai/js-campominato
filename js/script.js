@@ -9,13 +9,14 @@ Al termine della partita il software deve comunicare il punteggio, cioè il nume
 //Far generare 16 numeri casuali tra 1 e 100 al computer, i numeri non possono essere duplicati
 var numeriRandom = [];
 
-for (var i = 0; i < 16; i++) {
+while (numeriRandom.length < 16) {
   var numeroRandom = Math.floor(Math.random() * 100) +1;
 
   if (numeriRandom.includes(numeroRandom) == false) {
     numeriRandom.push(numeroRandom);
   }
 }
+
 
 /*Chiedere all' utente di inserire un numero alla volta (per 84 volte) sempre tra 1 e 100
 L'utente non può inserire più volte lo stesso numero*/
